@@ -1,0 +1,26 @@
+--cpu Cortex-M4.fp
+"embedded_proj\startup_stm32f407xx.o"
+"embedded_proj\main.o"
+"embedded_proj\stm32f4xx_it.o"
+"embedded_proj\stm32f4xx_hal_msp.o"
+"embedded_proj\my_keypad4x4.o"
+"embedded_proj\stm32f4xx_hal_tim.o"
+"embedded_proj\stm32f4xx_hal_tim_ex.o"
+"embedded_proj\stm32f4xx_hal_rcc.o"
+"embedded_proj\stm32f4xx_hal_rcc_ex.o"
+"embedded_proj\stm32f4xx_hal_flash.o"
+"embedded_proj\stm32f4xx_hal_flash_ex.o"
+"embedded_proj\stm32f4xx_hal_flash_ramfunc.o"
+"embedded_proj\stm32f4xx_hal_gpio.o"
+"embedded_proj\stm32f4xx_hal_dma_ex.o"
+"embedded_proj\stm32f4xx_hal_dma.o"
+"embedded_proj\stm32f4xx_hal_pwr.o"
+"embedded_proj\stm32f4xx_hal_pwr_ex.o"
+"embedded_proj\stm32f4xx_hal_cortex.o"
+"embedded_proj\stm32f4xx_hal.o"
+"embedded_proj\stm32f4xx_hal_exti.o"
+"embedded_proj\system_stm32f4xx.o"
+--strict --scatter "embedded_proj\embedded_proj.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "embedded_proj.map" -o embedded_proj\embedded_proj.axf
